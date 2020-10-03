@@ -72,9 +72,16 @@
       <br>
       I got more than <b>5 years</b> of programming experience, <b>1.5 years</b> of Python programming experience and <b>dozens</b> of completed projects.
     </p>
-    <hr class="my-4">
-    <p>So let me introduce myself in more detail.</p>
     <a class="btn btn-primary btn-md" href="#skills" role="button">More</a>
+    <hr class="my-4">
+    <div id="facts" class="text-center">
+      <p class="lead text-center">
+        <b>Random fact:</b> <span id="fact"></span>
+      </p>
+      <button class="btn ml-2 btn-outline-primary btn-sm" onclick="showRandomFact();">
+        <i class="fas fa-sync-alt"></i> Refresh
+      </button>
+    </div>
   </div>
 
   <!-- Skills -->
@@ -88,7 +95,7 @@
         <li>Web Frontend (HTML, CSS, JS, Bootstrap 4)</li>
         <li>Web Backend (PHP, Python Django)</li>
         <li>MySQL, SQLite ( + ORM developing)</li>
-        <li>Web scrapping</li>
+        <li>Web scraping</li>
         <li>Data analyzing</li>
         <li>Software design patterns</li>
         <li>Git</li>

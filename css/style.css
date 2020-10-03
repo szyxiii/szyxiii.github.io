@@ -1,11 +1,3 @@
-#intro p[class="lead"] {
-    max-width: 55em;
-}
-
-.bracket {
-    color: #2eb6c1;
-}
-
 a {
     color: #2eb6c1;
 }
@@ -17,4 +9,12 @@ a:hover {
 
 footer {
     color: grey;
+}
+
+#intro p[class="lead"] {
+    max-width: 55em;
+}
+
+.bracket {
+    color: #2eb6c1;
 }
