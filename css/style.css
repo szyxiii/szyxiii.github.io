@@ -1,9 +1,24 @@
+:root {
+    /* Cyan */
+    /*--accent-main: #2eb6c1;
+    --accent-light: #30c4d0;
+    --accent-dark: #2da0a9;
+    --accent-dark-text: #d8d8d8;*/
+
+    /* Purple */
+    --accent-main: #792dc9;
+    --accent-light: #8130d6;
+    --accent-dark: #6c29b2;
+    --accent-dark-text: #d8d8d8;
+}
+
 a {
-    color: #2eb6c1;
+    color: var(--accent-main);
+    font-weight: 400;
 }
 
 a:hover {
-    color: #00ecff;
+    color: var(--accent-light);
     text-decoration: none;
 }
 
@@ -16,5 +31,42 @@ footer {
 }
 
 .bracket {
-    color: #2eb6c1;
+    color: var(--accent-main);
+}
+
+.btn:focus, .btn:active {
+   outline: none !important;
+   box-shadow: none;
+}
+
+.btn-main {
+    background: var(--accent-main);
+    color: white;
+}
+
+.btn-main:hover {
+    background: var(--accent-light);
+    color: white;
+}
+
+.btn-main:focus {
+    background: var(--accent-dark);
+    color: var(--accent-dark-text);
+}
+
+.btn-outline-main {
+    background: none;
+    border: 5;
+    border-color: var(--accent-main);
+    color: var(--accent-main);
+}
+
+.btn-outline-main:hover {
+    background: var(--accent-light);
+    color: white;
+}
+
+.btn-outline-main:focus {
+    background: var(--accent-dark);
+    color: var(--accent-dark-text);
 }
