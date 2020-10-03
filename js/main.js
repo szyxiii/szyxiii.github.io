@@ -32,6 +32,7 @@ var phrases = [
     "No, it's not a rIdIcUloUs SlOw PRoGRamMiNg LanGuAgE, it's you who are using it wrong.",
     "Vkontakte even has bugs on the page with the bug report, can you believe that?",
     "<a href=\"https://www.urbandictionary.com/define.php?term=Programmer\" target=\"_\">#ProgrammersLivesMatter</a>",
+    "Actually, this is my first time using JQuery, and I love it ^_^",
     "Beep-bop bop. boop.",
     "Only a Sith deals in absolutes.",
     "Done is better than perfect.",
@@ -42,8 +43,7 @@ var phrases = [
     "[W] PEP 8 (E261): at least two spaces before inline comment.",
     "I don't know, check on <a href=\"https://python.org\" target=\"_\">python.org</a>",
     "Oh gosh. I think I forgot to begin transaction before modifying.............",
-    "How tf autocommit works in pymysql?!",
-    'INSERT INTO `users` VALUES (%, %, %)'
+    "How tf autocommit works in pymysql?!"
 ];
 
 function getRandomPhrase() {
@@ -52,7 +52,7 @@ function getRandomPhrase() {
     else
         var phrase = 'There are ' + (phrases.length + 1) + ' phrases here in total.';
 
-    if(phrase == $('#phrase-text').html)
+    if(phrase == $('#phrase-text').html())
         return getRandomPhrase();
     else
         return phrase;
