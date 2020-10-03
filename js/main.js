@@ -19,13 +19,13 @@ function enableTooltips() {
     });
 }
 
-// Random
+// Random function
 function random(max=1) {
     return Math.floor(Math.random() * max)
 }
 
-// Random facts
-var facts = [
+// Random phrases
+var phrases = [
     "If I don't know something, the documentation does.",
     "When creating this site, the Bootstrap documentation was worn down to holes.",
     "I re-create my GitHub repositories so that no one will see my stupid mistakes in commits history.",
@@ -46,21 +46,31 @@ var facts = [
     'INSERT INTO `users` VALUES (%, %, %)'
 ];
 
-function showRandomFact() {
-    var fact = '';
-
+function getRandomPhrase() {
     if(Math.random() > 0.1)
-        fact = facts[random(facts.length)];
+        var phrase = phrases[random(phrases.length)];
     else
-        fact = 'There are ' + (facts.length + 1) + ' facts here in total.';
+        var phrase = 'There are ' + (phrases.length + 1) + ' phrases here in total.';
 
-    if(fact == document.getElementById('fact').innerHTML)
-        showRandomFact();
+    if(phrase == $('#phrase-text').html)
+        return getRandomPhrase();
     else
-        document.getElementById('fact').innerHTML = fact;
+        return phrase;
 }
 
+function showRandomPhrase() {
+    $("#phrase-text").fadeOut(function() {
+        var phrase = getRandomPhrase();
+        $("#phrase-text").html(phrase);
+    }).fadeIn();
+}
 
+$('#phrase-btn').click(function() {
+    showRandomPhrase();
+});
+
+
+// Smooth scrolling to elements
 $(document).ready(function() {
     $(".scroll").click(function() {
         var href = $(this).attr("href");
@@ -70,8 +80,8 @@ $(document).ready(function() {
             scrollTop: $(href).offset().top - height
         }, 1500);
     });
-});
 
-registerClipoardElements("clipboard");
-enableTooltips();
-showRandomFact();
+    registerClipoardElements("clipboard");
+    enableTooltips();
+    showRandomPhrase();
+});
