@@ -61,6 +61,17 @@ function showRandomFact() {
 }
 
 
+$(document).ready(function() {
+    $(".scroll").click(function() {
+        var href = $(this).attr("href");
+        var height = $('#navbar').height() + 20;
+
+        $('html, body').animate({
+            scrollTop: $(href).offset().top - height
+        }, 1500);
+    });
+});
+
 registerClipoardElements("clipboard");
 enableTooltips();
 showRandomFact();
