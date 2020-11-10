@@ -1,148 +1,81 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/fontawesome.all.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="img/favicon.png" type="image/x-icon">
 
-  <title>szyxiii | Developer</title>
+  <title>Spotify to VK</title>
 </head>
 <body>
   <!-- Navbar -->
-  <nav id="navbar" class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
-    <a class="navbar-brand scroll" href="#intro"><span class="bracket">&lt;</span>szyxiii<span class="bracket">/&gt;</span></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <!-- Skills -->
-        <li class="nav-item">
-          <a class="nav-link scroll" href="#skills">Skills</a>
-        </li>
-        <!-- Projects -->
-        <li class="nav-item">
-          <a class="nav-link scroll" href="#projects">Projects</a>
-        </li>
-        <!-- Contacts -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="contactsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Contacts
-          </a>
-          <div class="dropdown-menu" aria-labelledby="contactsDropdown">
-            <a class="dropdown-item" href="https://t.me/szyxiii" target="_">
-              <i class="fab fa-telegram-plane"></i>
-              Telegram
-            </a>
-            <a class="dropdown-item" href="https://github.com/szyxiii" target="_">
-              <i class="fab fa-github"></i>
-              GitHub
-            </a>
-            <div class="dropdown-divider"></div>
-            <span class="dropdown-item clipboard" data-toggle="tooltip" data-placement="bottom" title="Copy address" content="x7174nx@gmail.com">
-              <i class="fas fa-envelope"></i>
-              x7174nx@gmail.com
-            </span>
-          </div>
-        </li>
-        <!-- Languages -->
-        <!-- <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="langsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Language
-          </a>
-          <div class="dropdown-menu" aria-labelledby="langsDropdown">
-            <a class="dropdown-item" href="#">Russian</a>
-            <a class="dropdown-item" href="#">English</a>
-          </div>
-        </li> -->
-      </ul>
-    </div>
+  <nav class="navbar navbar-light bg-light" style="height: 40px">
+    <a href="#" class="navbar-brand">
+      <img src="img/logo.png" alt="logo" width="100" class="align-top my-1">
+    </a>
   </nav>
 
-  <!-- Introduction -->
-  <div id="intro" class="jumbotron">
-    <h1 class="display-4">
-      <span>Welcome, <span class="bracket">{username}</span>.</span>
-    </h1>
-    <p class="lead">I am a Junior Python web, application and system software developer.
-      <br>
-      I got more than <b>5 years</b> of programming experience, <b>1.5 years</b> of Python programming experience and <b>dozens</b> of completed projects.
-    </p>
-    <a class="btn btn-main btn-md scroll" href="#skills" role="button">More</a>
-    <hr class="my-4">
-    <!-- Random phrase -->
-    <div id="phrases" class="text-center">
-      <p id="phrase-text" class="lead text-center">Nooooooo! I'm wanishing!</p>
-      <button id="phrase-btn" class="btn ml-2 btn-outline-main btn-sm">
-        <i class="fas fa-sync-alt"></i> New thoughts
-      </button>
+  <!-- Main -->
+  <div id="main" class="container h-100">
+    <div class="row h-100 justify-content-center align-items-center flex-column">
+      <h1>Spotify to VK</h1>
+      <h5>Трансляции. Плейлисты. Для вас.</h5>
+      <a href="#sync" class="btn btn-circle btn-light scroll mt-5">
+        <h4>&darr;</h4>
+      </a>
     </div>
   </div>
 
-  <!-- Skills -->
-  <div id="skills" class="container">
-    <h2 class="text-center">Skills</h2>
-    <p class="lead mt-4">I have been a programmer for 5 years and have experience working with programming languages such as <b>C</b>, <b>C#</b>, <b>C++</b>, <b>Python</b>, <b>PHP</b>, <b>JPHP</b>, <b>Java</b>, <b>JavaScript</b>, <b>Lua</b> and <b>Dart</b>. Projects written in some of them can be found in my <a href="https://github.com/szyxiii" target="_">GitHub profile</a>.</p>
-    <!-- Hardskills -->
-    <p class="lead mt-2">
-      My hardskills:
-      <ul>
-        <li>Web Frontend (HTML, CSS, JavaScript, JQuery, Bootstrap 4)</li>
-        <li>Web Backend (PHP, Django)</li>
-        <li>MySQL, SQLite ( + casual ORM developing)</li>
-        <li>Web scraping</li>
-        <li>Data analyzing</li>
-        <li>Software design patterns</li>
-        <li>Git</li>
-        <li>Linux experience</li>
-        <li>English (Intermediate)</li>
-        <li>Digital Design (Adobe Photoshop, Adobe Illustrator, Adobe XD, Sketch)</li>
-      </ul>
-    </p>
-    <!-- Softskills -->
-    <p class="lead mt-2">
-      My softskills:
-      <ul>
-        <li>Fast learning and mastering in new programming languages and technologies</li>
-        <li>The desire to develop and to learn something new</li>
-        <li>Experience working in a team</li>
-        <li>Experience in teaching</li>
-        <li>Good time management</li>
-        <li>Communication skills</li>
-      </ul>
-    </p>
+  <!-- Sync -->
+  <div id="sync" class="container-fluid feature spotify-grd">
+    <div class="col-12 col-md-auto feature-content">
+      <img class="feature-img" src="img/iphone.png" alt="">
+    </div>
+    <div class="col-12 col-md-5 feature-content">
+      <h1 class="feature-title">Синхронизируйте</h1>
+      <span>
+        Синхронизируйте плейлисты, проигрываемые треки и наслаждайтесь своей любимой музыкой из <span class="spotify">Spotify</span>
+      </span>
+      <div class="feature-buttons justify-items-around">
+        <a href="#main" class="btn btn-circle btn-light scroll">
+          <h4>&uarr;</h4>
+        </a>
+        <a href="#share" class="btn btn-circle btn-light scroll">
+          <h4>&darr;</h4>
+        </a>
+      </div>
+    </div>
   </div>
 
-  <!-- Experience -->
-  <div id="experience" class="container">
-    <h2 class="text-center">Experience</h2>
-    <p class="lead mt-4 text-center">
-      Coming soon
-    </p>
+  <!-- Share -->
+  <div id="share" class="container-fluid feature-reverse vk-grd">
+    <div class="col-12 col-md-auto feature-content">
+      <img class="feature-img" src="img/iphone.png" alt="">
+    </div>
+    <div class="col-12 col-md-5 feature-content">
+      <h1 class="feature-title">Делитесь историями</h1>
+      <span>
+        Делитесь историями <span class="vk">ВКонтакте</span> о прослушанных за день треках, о времени в гармонии с музыкой, о любой песне и ещё многим другим.
+      </span>
+      <div class="feature-buttons justify-items-around">
+        <a href="#sync" class="btn btn-circle btn-light scroll">
+          <h4>&uarr;</h4>
+        </a>
+        <a href="#share" class="btn btn-circle btn-light scroll">
+          <h4>&darr;</h4>
+        </a>
+      </div>
+    </div>
   </div>
 
-  <!-- Projects -->
-  <div id="projects" class="container">
-    <h2 class="text-center">Projects</h2>
-    <p class="lead mt-4 text-center">
-      Coming soon
-    </p>
-  </div>
 
-  <!-- Footer -->
-  <footer class="text-center mb-3 mt-5">
-    <hr>
-    &copy; All rights reserved, 2020
-  </footer>
-
-  <!-- Scripts -->
-  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-  <script src="js/main.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/validate.js"></script>
 </body>
 </html>
