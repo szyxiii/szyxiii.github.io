@@ -63,18 +63,11 @@ footer {
 .spotify-grd {
   background: rgb(30,215,96);
   background: linear-gradient(90deg, rgba(30,215,96,.4) 0%, rgba(255,255,255,1) 100%);
-  background-size: 400% 400%;
+  background-size: 300% 300%;
 
-  
-}
-
-.show-grd {
-  background: linear-gradient(90deg, red 0%, blue 100%);
-  background-size: 400% 400%;
-
-  -webkit-animation: ShowGradient 15s ease infinite;
-  -moz-animation: ShowGradient 15s ease infinite;
-  animation: ShowGradient 15s ease infinite;
+  -webkit-animation: ShowGradient 10s ease infinite;
+  -moz-animation: ShowGradient 10s ease infinite;
+  animation: ShowGradient 10s ease infinite;
 }
 
 .vk {
@@ -84,17 +77,17 @@ footer {
 .vk-grd {
   background: rgb(39,135,245);
   background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(39,135,245,.4) 90%);
-  background-size: 400% 400%;
+  background-size: 300% 300%;
 
-  -webkit-animation: ShowGradient 15s ease infinite;
-  -moz-animation: ShowGradient 15s ease infinite;
-  animation: ShowGradient 15s ease infinite;
+  -webkit-animation: ShowGradient 10s ease infinite;
+  -moz-animation: ShowGradient 10s ease infinite;
+  animation: ShowGradient 10s ease infinite;
 }
 
 @-webkit-keyframes ShowGradient {
   0%{background-position:0% 50%}
   50%{background-position:100% 50%}
-  100%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
 }
 
 @-moz-keyframes ShowGradient {
